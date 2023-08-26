@@ -51,6 +51,7 @@ header {
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .sign-in-container {
@@ -99,6 +100,125 @@ header {
   background-color: #3a3d3e;
 }
 
+/* green */
+/* Hero Section */
+/* Hero Section */
+/* Hero Section */
+/* green */
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.hero .section-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero .section-date p {
+  font-size: 1.3rem;
+  color: #8c8c8c;
+}
+
+.hero .section-news {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30px;
+  max-width: 100%;
+}
+
+.hero .section-news .section-one {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 40px 10px;
+  height: 360px;
+  background: url("https://ichef.bbc.co.uk/wwhp/999/cpsprodpb/1333A/production/_130905687_gettyimages-1622660427.jpg");
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  letter-spacing: 2px;
+}
+
+.hero .section-news .section-one h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  max-width: 90%;
+}
+
+.hero .section-news .section-one h3 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-weight: normal;
+}
+
+.hero .section-news .section-one span {
+  font-size: 0.7rem;
+  padding-left: 5px;
+  border-left: 2px solid red;
+}
+
+.hero .section-news .section-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 50%;
+  gap: 15px;
+}
+
+.hero .section-news .section-two h1 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  max-width: 90%;
+}
+
+.hero .section-news .section-two span {
+  font-size: 0.7rem;
+  padding-left: 5px;
+  border-left: 2px solid red;
+}
+
+.hero .section-news .section-two section {
+  max-width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #fff;
+}
+
+.hero .section-news .section-two section.one {
+  background: url("https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/117E2/production/_130905617_crash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .section-news .section-two section.two {
+  background: url("https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/B234/production/_130902654_donaldtrumpfullmugshot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .section-news .section-two section.three {
+  background: url("https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/D070/production/_130906335_gettyimages-1623404421.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .section-news .section-two section.four {
+  background: url("https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/11D46/production/_130903037_tfaqr8ze.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Media Queries */
+
 @media screen and (max-width: 1279px) {
   .search-container span {
     display: none;
@@ -116,11 +236,34 @@ header {
   .nav-links-container li a {
     padding: 10px 15px;
   }
+
+  .hero {
+    padding: 15px 10px;
+  }
+
+  .hero .section-news .section-one h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero .section-news .section-one h3 {
+    font-size: 0.7rem;
+  }
+
+  .hero .section-news .section-two {
+    gap: 8px;
+  }
+
+  .hero .section-news .section-two h1 {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
   .nav {
     margin: 0 70px;
+    font-size: 1.1rem;
   }
 
   .sign-in-container span {
@@ -143,6 +286,42 @@ header {
 
   .nav-links-container li:nth-last-child(3) {
     display: none;
+  }
+
+  .hero .section-news {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero .section-news .section-one {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .hero .section-news .section-one h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero .section-news .section-one h3 {
+    font-size: 0.9rem;
+  }
+
+  .hero .section-news .section-two {
+    max-width: 100%;
+    column-gap: 20px;
+  }
+
+  .hero .section-news .section-two section {
+    width: 480px;
+    height: 256px;
+  }
+
+  .hero .section-news .section-two h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero .section-news .section-two span {
+    font-size: 0.9rem;
   }
 }
 
@@ -192,11 +371,64 @@ header {
 
   .logo-container {
     order: 2;
-    margin-left: 23vw;
+    margin-left: 25vw;
   }
 
   .sign-in-container {
     order: 1;
+  }
+
+  .hero .section-date {
+    display: none;
+  }
+
+  .hero .section-news .section-one h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero .section-news .section-one h3 {
+    font-size: 0.7rem;
+  }
+
+  .hero .section-news .section-two {
+    flex-direction: column;
+  }
+
+  .hero .section-news .section-two section {
+    color: #000;
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .hero .section-news .section-two section h1 {
+    max-width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .hero .section-news .section-two section.one {
+    background: none;
+    height: auto;
+    gap: 20px;
+  }
+
+  .hero .section-news .section-two section.two {
+    background: none;
+    height: auto;
+    gap: 20px;
+  }
+
+  .hero .section-news .section-two section.three {
+    background: none;
+    height: auto;
+    gap: 20px;
+  }
+
+  .hero .section-news .section-two section.four {
+    background: none;
+    height: auto;
+    gap: 20px;
   }
 }
 
